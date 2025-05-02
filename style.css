@@ -1,0 +1,39 @@
+body {
+    /* color: white;
+    background-color: black; */
+}
+
+.left{
+    width : 25vw;
+    padding : 10px;
+}
+
+.right{
+    width : 75vw;
+}
+
+.home ul {
+    padding: 0;
+    margin: 0;
+}
+
+.home ul li{
+    margin: 5px 5px;
+    display : flex;
+    list-style : none;
+    gap : 3px;
+    width : 15px;
+    padding-top : 15px;
+}
+
+.logo{
+    align-items : center;
+    gap : 1px;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.logo-icon{
+    width : 25px;
+    font : bold;
+}
