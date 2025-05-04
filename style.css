@@ -15,11 +15,17 @@ body {
 .left{
     width : 25vw;
     min-height: 95vh;
-    padding : 10px;
+    padding : 5px;
 }
 
 .right{
     width : 75vw;
+    min-height: 95vh;
+    margin: 12px 0;
+}
+
+.home{
+    padding-top: 0;
 }
 
 .home ul {
@@ -33,7 +39,7 @@ body {
     list-style : none;
     gap : 3px;
     width : 15px;
-    padding-top : 15px;
+    padding-top : 10px;
 }
 
 .logo{
@@ -80,4 +86,42 @@ body {
 
 .footer a{
     color : grey;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(38, 38, 38);
+}
+
+.header > *{
+    padding: 10px;
+}
+
+.spotifyPlaylist{
+    padding: 10px;
+}
+
+.spotifyPlaylist .cardContainer{
+    margin: 6px;
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.spotifyPlaylist .Card{
+    width: 200px;
+    margin: 10px;
+    padding: 5px;
+    border: 2px;
+    background-color: #252525;
+}
+
+.Card > *{
+    padding-top: 5px;
+}
+
+.Card img {
+    width: 100%;
+    object-fit: contain;
 }
