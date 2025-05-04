@@ -19,13 +19,17 @@ body {
 }
 
 .right{
+    bottom : 10px;
     width : 75vw;
     min-height: 95vh;
+    max-height: 95vh;
+    /* overflow: scroll; */
     margin: 12px 0;
 }
 
 .home{
     padding-top: 0;
+    min-height: 10%;
 }
 
 .home ul {
@@ -107,6 +111,9 @@ body {
     display: flex;
     gap: 6px;
     flex-wrap: wrap;
+    max-height: 80vh;
+    overflow: scroll;
+
 }
 
 .spotifyPlaylist .Card{
@@ -120,7 +127,6 @@ body {
 .Card {
     width: 300px;
     position: relative;
-    font-family: sans-serif;
     color: white;
 }
 
@@ -146,3 +152,38 @@ body {
     opacity: 1;
 }
   
+.signup-btn{
+    background-color: rgb(39, 44, 76);
+    color: grey;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 20px;
+    margin-right: 10px;
+    padding: 10px 20px;
+}
+
+.signup-btn:hover{
+    background-color: #252525;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.login-btn{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: none;
+    outline: none;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 20px;
+    margin-right: 10px;
+    padding: 10px 20px;
+}
+
+.login-btn:hover{
+    background-color: grey;
+    color: #252525;
+    font-size: 1.1rem;
+}
