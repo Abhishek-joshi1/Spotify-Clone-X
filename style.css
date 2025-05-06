@@ -105,6 +105,8 @@ body {
 
 .spotifyPlaylist{
     padding: 10px;
+    position: relative;
+    height : 82vh;
 }
 
 .spotifyPlaylist .cardContainer{
@@ -114,6 +116,7 @@ body {
     flex-wrap: wrap;
     max-height: 80vh;
     overflow: scroll;
+    overflow-x: hidden;
 
 }
 
@@ -187,4 +190,31 @@ body {
     background-color: grey;
     color: #252525;
     font-size: 1.1rem;
+}
+
+.PlayBar{
+    position: absolute;
+    bottom: 0;
+    width: 97%;
+    height: 50px;
+    background-color: rgb(53, 56, 53);
+    padding: 10px;
+}
+
+
+.songbuttons{
+    display: flex; /* fixed this */
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* add space between icons */
+    height: 40px;
+}
+
+.songbuttons img{
+    width: 40px;
+    height: 40px;
+}
+
+.playbar-icons{
+    filter: invert();
 }

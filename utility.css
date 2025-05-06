@@ -3,6 +3,13 @@
     /* margin : 3px; */
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: black; /* Ensure background is black */
+    color: white;
+}
+
 .flex{
     display : flex;
 }
