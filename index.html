@@ -25,6 +25,10 @@
                         Your library
                     </h2>
                 </div>
+                <div class="songLists">
+                    <ul>
+                    </ul>
+                </div>
                 <div class="footer">
                     <div><a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a></div>
                     <div><a href="https://www.spotify.com/jp/privacy/"><span>Privacy Center</span></a></div>
@@ -76,13 +80,21 @@
                     </div>
                 </div>
                 <div class="PlayBar">
-                    <div class="songInfo"></div>
-                    <div class="songbuttons">
-                        <img src="prevsong.svg" alt="" class="playbar-icons">
-                        <img src="play.svg" alt="" class="">
-                        <img src="nextsong.svg" alt="" class="playbar-icons">
+                    <div class="seekbar">
+                        <div class="circle">
+
+                        </div>
                     </div>
-                    <div class="songtime"></div>
+                    <div class="aboveBar">
+                        <div class="songInfo songCurrStyle" id="songInfo"></div>
+                        <div class="songbuttons">
+                            <img id="previous" src="prevsong.svg" alt="" class="playbar-icons">
+                            <img id="playCurr" src="play.svg" alt="" class="">
+                            <img id="next" src="nextsong.svg" alt="" class="playbar-icons">
+                        </div>
+                        <div class="songtime songCurrStyle"></div>
+                    </div>
+                    
                 </div>
             </div>
         </div>    
