@@ -1,5 +1,7 @@
 let currSong = new Audio();
 
+let songs;
+
 function formatTime(seconds) {
     // Convert to integer seconds (round down)
     const totalSeconds = Math.floor(seconds);
@@ -46,7 +48,7 @@ const playMusic = (track, pause = false) => {
 } 
 
 async function playSong() {
-    const songs = await getSongs();
+    songs = await getSongs();
 
     playMusic(songs[0].replaceAll("%20", " "), true)
 
@@ -101,6 +103,24 @@ async function playSong() {
     document.querySelector(".close").addEventListener("click", () => {
         document.querySelector(".left").style.left = "-120%"
     });
+
+    previous.addEventListener("click", () => {
+        let index =  songs.indexOf(currSong.src.split("/").slice(-1)[0])
+        if((index - 1) >= 0){
+            playMusic(songs[index - 1])
+        }
+    })
+
+    next.addEventListener("click", () => {
+        // console.log(songs);
+        let n = songs.length;
+        let index =  songs.indexOf(currSong.src.split("/").slice(-1)[0])
+        // console.log(index)
+        if (index + 1 < n){
+            playMusic(songs[index + 1])
+        }
+        
+    })
 
 }
 
